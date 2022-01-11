@@ -19,7 +19,7 @@
           <archive>
             <manifest>
               <addClasspath>true</addClasspath>
-              <mainClass>pl.grenczuk.walidatoridentyfikatorow.WalidatorIdentyfikatorow</mainClass>
+              <mainClass>pl.grenczuk.walidatoridentyfikatorow.WalidatorPesel</mainClass>
             </manifest>
           </archive>
         </configuration>
