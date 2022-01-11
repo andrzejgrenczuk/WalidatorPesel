@@ -9,7 +9,7 @@ import javax.swing.table.DefaultTableModel;
  *
  * @author grencan
  */
-public class WalidatorIdentyfikatorow extends javax.swing.JFrame {
+public class WalidatorPesel extends javax.swing.JFrame {
     //String PESELNumber;
     int x;
     
@@ -17,7 +17,7 @@ public class WalidatorIdentyfikatorow extends javax.swing.JFrame {
     /**
      * Creates new form WalidatorIdentyfikatorow
      */
-    public WalidatorIdentyfikatorow() {
+    public WalidatorPesel() {
         initComponents();
     }
 
@@ -322,20 +322,21 @@ public class WalidatorIdentyfikatorow extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(WalidatorIdentyfikatorow.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(WalidatorPesel.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(WalidatorIdentyfikatorow.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(WalidatorPesel.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(WalidatorIdentyfikatorow.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(WalidatorPesel.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(WalidatorIdentyfikatorow.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(WalidatorPesel.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new WalidatorIdentyfikatorow().setVisible(true);
+                new WalidatorPesel().setVisible(true);
             }
         });
     }
