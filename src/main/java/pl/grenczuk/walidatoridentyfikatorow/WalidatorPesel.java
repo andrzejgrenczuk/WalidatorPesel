@@ -3,17 +3,19 @@ package pl.grenczuk.walidatoridentyfikatorow;
 
 import java.lang.String;
 import javax.swing.table.DefaultTableModel;
-//import org.apache.logging.log4j.Logger;
-//import org.apache.logging.log4j.LogManager;
+
 /**
  *
- * @author grencan
+ * @author Andrzej Greńczuk
+ * @version 1.0
+ * @email andrzej.grenczuk@gmail.com
+ * @email 158019@student.ue.wroc.pl
  */
 public class WalidatorPesel extends javax.swing.JFrame {
     //String PESELNumber;
     int x;
     
-   // protected static final Logger parentLogger = LogManager.getLogger();
+   
     /**
      * Creates new form WalidatorIdentyfikatorow
      */
