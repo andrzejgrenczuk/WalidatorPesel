@@ -12,15 +12,19 @@ import javax.swing.table.DefaultTableModel;
  * @email 158019@student.ue.wroc.pl
  */
 public class WalidatorPesel extends javax.swing.JFrame {
-    //String PESELNumber;
+ 
+   String autor = "Andrzej Greńczuk";
+   String rok = "2022";
+   String wersja = "1.0";
     int x;
     
-   
+
     /**
      * Creates new form WalidatorIdentyfikatorow
      */
     public WalidatorPesel() {
         initComponents();
+        impro();
     }
 
     /**
@@ -53,6 +57,12 @@ public class WalidatorPesel extends javax.swing.JFrame {
         LacznieSprawdzen = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
+        jLabel13 = new javax.swing.JLabel();
+        jLabel14 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -137,6 +147,18 @@ public class WalidatorPesel extends javax.swing.JFrame {
             }
         });
 
+        jLabel5.setText("Autor:");
+
+        jLabel10.setText("Rok:");
+
+        jLabel11.setText("Wersja:");
+
+        jLabel12.setText("jLabel12");
+
+        jLabel13.setText("jLabel13");
+
+        jLabel14.setText("jLabel14");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -160,7 +182,19 @@ public class WalidatorPesel extends javax.swing.JFrame {
                                         .addGap(18, 18, 18)
                                         .addComponent(Zamknij)
                                         .addGap(18, 18, 18)
-                                        .addComponent(jButton1))))
+                                        .addComponent(jButton1))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(jLabel11)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(jLabel14))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(jLabel5)
+                                            .addComponent(jLabel10))
+                                        .addGap(18, 18, 18)
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(jLabel13)
+                                            .addComponent(jLabel12)))))
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jLabel2)
@@ -225,11 +259,27 @@ public class WalidatorPesel extends javax.swing.JFrame {
                             .addComponent(Wyczyść)
                             .addComponent(Zamknij)
                             .addComponent(jButton1))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(LacznieSprawdzen)
-                            .addComponent(jLabel7))
-                        .addGap(94, 94, 94))))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(LacznieSprawdzen)
+                                    .addComponent(jLabel7))
+                                .addGap(94, 94, 94))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(58, 58, 58)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(jLabel5)
+                                    .addComponent(jLabel12))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(jLabel10)
+                                    .addComponent(jLabel13))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(jLabel11)
+                                    .addComponent(jLabel14))
+                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))))
         );
 
         pack();
@@ -258,6 +308,12 @@ public class WalidatorPesel extends javax.swing.JFrame {
         DefaultTableModel tabelModel = (DefaultTableModel) jTable1.getModel();
         tabelModel.addRow(new Object[]{str1, str2, str3, str4, str5, str6});
      }
+    
+    public void impro(){
+               jLabel12.setText(autor);
+               jLabel13.setText(rok);
+               jLabel14.setText(wersja);
+    }
     // WŁASNA METODA
     /*
     * Metoda oblicza ilość wprowadzonych wierszy
@@ -334,11 +390,13 @@ public class WalidatorPesel extends javax.swing.JFrame {
         }
         //</editor-fold>
         //</editor-fold>
-
+       
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
+                
                 new WalidatorPesel().setVisible(true);
+
             }
         });
     }
@@ -356,9 +414,15 @@ public class WalidatorPesel extends javax.swing.JFrame {
     private javax.swing.JButton Zamknij;
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
