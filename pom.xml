@@ -27,4 +27,11 @@
         </plugins>
     </build>
     <name>WalidatorPesel</name>
+    <dependencies>
+        <dependency>
+            <groupId>io.cdap.plugin</groupId>
+            <artifactId>oracle-plugin</artifactId>
+            <version>1.6</version>
+        </dependency>
+    </dependencies>
 </project>
